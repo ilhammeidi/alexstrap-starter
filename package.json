@@ -28,7 +28,7 @@
 		"gulp-sourcemaps": "^2.6.5",
 		"gulp-uglify": "^3.0.2",
 		"gulp-util": "^3.0.8",
-		"jquery": "^3.4.1",
+		"jquery": "^3.5.0",
 		"jquery-form-validator": "^2.3.79",
 		"jquery-nav-scroll": "^1.4.1",
 		"jquery-touchswipe": "^1.6.19",
