@@ -1,0 +1,60 @@
+.card {
+  &-pricing {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin-bottom: $spacing2;
+  }
+  &-blog {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.name {
+  display: flex;
+  margin-top: $spacing1;
+  align-items: center;
+  span {
+    display: inline-block;
+    @include margin-left($spacing1)
+  }
+}
+
+.avatar-img {
+  width: 30px;
+  height: 30px
+}
+
+.testi-card {
+  padding: $spacing3;
+}
+
+.price {
+  &-card {
+    text-align: center;
+    h2 {
+      @include palette-text-primary
+    }
+    h6 {
+      @include palette-text-secondary
+    }
+    ul {
+      li {
+        @include palette-text-secondary
+      }
+    }
+  }
+  &-header {
+    display: block;
+    padding: $spacing2;
+    position: relative;
+    @include use-theme(background-color, #EEEEEE, #424242);
+    .icon {
+      position: absolute;
+      top: $spacing1;
+      @include right($spacing1);
+      @include palette-text-primary
+    }
+  }
+}

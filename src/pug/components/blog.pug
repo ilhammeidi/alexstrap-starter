@@ -1,0 +1,33 @@
+-
+  var blogData = [
+    {
+      title: 'Heading',
+      desc:
+        'This is a media card. You can use this section to describe the content.'
+    },
+    {
+      title: 'Heading',
+      desc:
+        'This is a media card. You can use this section to describe the content.'
+    },
+    {
+      title: 'Heading',
+      desc:
+        'This is a media card. You can use this section to describe the content.'
+    }
+  ]
+
+include cards/blog-card.pug
+
+.container
+  h3.display-2.text-center.mb-4
+    | Blog and News
+  p.body-1.text-center.mb-4
+    | Curabitur egestas consequat lorem, vel fermentum augue porta id.
+  #blog-list.blog-wrap
+    .row.justify-content-center
+      .col-md-9
+        .row
+          each item in blogData
+            .col-md-4.px-3
+              +blog-card(item.title, item.desc)

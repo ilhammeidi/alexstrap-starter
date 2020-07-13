@@ -1,0 +1,127 @@
+@function extract-1-to-4-values($one, $two: null, $three: null, $four: null) {
+  @if ($one == null) {
+    @error "parameter $one can't be null in call to Function extract-1-to-4-values";
+  }
+
+  // if $two is missing, it is the same as $one
+  @if ($two == null) {
+    $two: $one;
+  }
+
+  // if $three is missing, it is the same as $one
+  @if ($three == null) {
+    $three: $one;
+  }
+
+  // if $four is missing, it is the same as $two
+  @if ($four == null) {
+    $four: $two;
+  }
+
+  @return ($one, $two, $three, $four);
+}
+
+@mixin rtl-sass-declaration($property, $leftToRightValue, $rightToLeftValue) {
+  @if ($property == null) {
+    @error "parameter $property can't be null in call to Mixin rtl-sass-declaration";
+  }
+
+  @if ($leftToRightValue == null and $rightToLeftValue == null) {
+    @error "parameters $leftToRightValue and $rightToLeftValue can't both be null in call to Mixin rtl-sass-declaration";
+  }
+
+  @if ($leftToRightValue != null) {
+    [dir="ltr"] & {
+      #{$property}: $leftToRightValue;
+    }
+  }
+
+  @if ($rightToLeftValue != null) {
+    [dir="rtl"] & {
+      #{$property}: $rightToLeftValue;
+    }
+  }
+}
+
+@mixin rtl-sass-declaration-1-to-4($property, $top, $right: null, $bottom: null, $left: null) {
+  @if ($property == null) {
+    @error "parameter $property can't be null in call to Mixin rtl-sass-declaration-1-to-4";
+  }
+
+  @if ($top == null) {
+    @error "parameter $top can't be null in call to Mixin rtl-sass-declaration-1-to-4";
+  }
+
+  $suffix: null;
+
+  @if (type-of($property) == 'list') {
+    @if (length($property) > 1) {
+      $suffix: -#{nth($property, 2)};
+    }
+
+    $property: nth($property, 1);
+  }
+
+  $values: extract-1-to-4-values($top, $right, $bottom, $left);
+
+  #{$property}-top#{$suffix}: nth($values, 1);
+  @include rtl-sass-declaration(#{$property}-right#{$suffix}, nth($values, 2), null);
+  @include rtl-sass-declaration(#{$property}-left#{$suffix}, null, nth($values, 2));
+  #{$property}-bottom#{$suffix}: nth($values, 3);
+  @include rtl-sass-declaration(#{$property}-left#{$suffix}, nth($values, 4), null);
+  @include rtl-sass-declaration(#{$property}-right#{$suffix}, null, nth($values, 4));
+}
+
+@mixin rtl-sass-declaration-1-to-4-corner($property, $topLeft, $topRight: null, $bottomRight: null, $bottomLeft: null) {
+  @if ($property == null) {
+    @error "parameter $property can't be null in call to Mixin rtl-sass-declaration-1-to-4-corner";
+  }
+
+  @if ($topLeft == null) {
+    @error "parameter $topLeft can't be null in call to Mixin rtl-sass-declaration-1-to-4-corner";
+  }
+
+  $suffix: null;
+
+  @if (type-of($property) == 'list') {
+    @if (length($property) > 1) {
+      $suffix: -#{nth($property, 2)};
+    }
+
+    $property: nth($property, 1);
+  }
+
+  $values: extract-1-to-4-values($topLeft, $topRight, $bottomRight, $bottomLeft);
+
+  @include rtl-sass-declaration(#{$property}-top-left#{$suffix}, nth($values, 1), null);
+  @include rtl-sass-declaration(#{$property}-top-right#{$suffix}, null, nth($values, 1));
+
+  @include rtl-sass-declaration(#{$property}-top-right#{$suffix}, nth($values, 2), null);
+  @include rtl-sass-declaration(#{$property}-top-left#{$suffix}, null, nth($values, 2));
+
+  @include rtl-sass-declaration(#{$property}-bottom-right#{$suffix}, nth($values, 3), null);
+  @include rtl-sass-declaration(#{$property}-bottom-left#{$suffix}, null, nth($values, 3));
+
+  @include rtl-sass-declaration(#{$property}-bottom-left#{$suffix}, nth($values, 4), null);
+  @include rtl-sass-declaration(#{$property}-bottom-right#{$suffix}, null, nth($values, 4));
+}
+
+@mixin rtl-sass-declaration-value($property, $leftToRightValue) {
+  @if ($property == null) {
+    @error "parameter $property can't be null in call to Mixin rtl-sass-declaration-value";
+  }
+
+  @if ($leftToRightValue == null) {
+    @error "parameter $leftToRightValue can't be null in call to Mixin rtl-sass-declaration-value";
+  }
+
+  $rightToLeftValue: $leftToRightValue;
+
+  @if ($leftToRightValue == left) {
+    $rightToLeftValue: right;
+  } @else if ($leftToRightValue == right) {
+    $rightToLeftValue: left;
+  }
+
+  @include rtl-sass-declaration(#{$property}, $leftToRightValue, $rightToLeftValue);
+}

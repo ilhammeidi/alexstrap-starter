@@ -1,0 +1,47 @@
+// #### HEADER ####
+include mobile-menu.pug
+header.app-bar.header#header
+  .container
+    .header-content
+      nav.nav-menu
+        |
+        |
+        button.btn-icon.waves-effect.sidenav-trigger.show-md-down(
+          id="mobile_menu"
+          type="button"
+        )
+          i.material-icons menu
+        .logo
+          |
+          |
+          a(href="#home")
+            img(
+              src=assets + brand.starter.img
+              alt="logo"
+            )
+          |
+          |
+        .scrollactive-nav.scrollnav.show-lg-up
+          ul
+            each item in menu.starter
+              |
+              |
+              li
+                a.btn.btn-flat.anchor-link.waves-effect(
+                  href='#'+item.name
+                ) #{item.name}
+      nav.user-menu
+        |
+        |
+        button.btn.btn-flat.waves-effect.show-lg-up(type="button") Login
+        |
+        |
+        button.btn.waves-effect.primary(type="button") Register
+        |
+        |
+        span.spacer.vertical-divider.show-lg-up
+        include ./settings
+        +settings("false")
+|
+|
+// #### END HEADER ####

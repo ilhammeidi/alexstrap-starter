@@ -1,0 +1,221 @@
+/*
+** theme color var
+*/
+@import './color-var';
+
+html {
+  @media only screen and (min-width: 992px) {
+    font-size: 16px
+  }
+  @media only screen and (min-width: 0) {
+    font-size: 16px
+  }
+}
+.m-application {
+  overflow: hidden;
+  .carousel {
+    height: auto;
+  }
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  figure {
+    margin: 0;
+  }
+  .btn{
+    &:not(.btn-flat):not(.btn-icon) {
+      &:hover {
+        color: #FFF;
+      }
+      &:focus {
+        box-shadow: none
+      }
+      &:active {
+        box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
+      }
+    }
+  }
+  nav {
+    box-shadow: none;
+    background: none;
+    width: auto;
+    color: inherit;
+    i {
+      height: auto;
+      line-height: normal;
+    }
+    ul a:hover {
+      background: none
+    }
+    .sidenav-trigger {
+      height: 36px;
+    }
+  }
+  &--is-rtl {
+    text-align: right
+  }
+  .m-content {
+    font-family: 'Roboto', sans-serif;
+    padding: 0 !important;
+  }
+  .overlay {
+    z-index: 90 !important
+  }
+  .m-application--wrap a {
+    color: $palette-primary-main
+  }
+  .btn.btn-large {
+    font-size: 0.9375rem;
+  }
+  .btn {
+    font-weight: 600;
+  }
+  .slick-slide {
+    &:focus {
+      outline: none;
+    }
+  }
+  label {
+    font-size: 1rem;
+    color: var(--con-2);
+  }
+  .row {
+    flex-direction: row;
+    &.spacing2 {
+      margin-left: -8px;
+      margin-right: -8px;
+    }
+    &.spacing4 {
+      margin-left: -16px;
+      margin-right: -16px;
+    }
+    &.spacing6 {
+      margin-left: -24px;
+      margin-right: -24px;
+    }
+    &.spacing8 {
+      margin-left: -32px;
+      margin-right: -32px;
+    }
+    &.row-reverse {
+      flex-direction: row-reverse
+    }
+    &.column {
+      flex-direction: column
+    }
+    &.column-reverse {
+      flex-direction: column-reverse
+    }
+  }
+  :focus {
+    outline: none;
+  }
+  .card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    &-content {
+      font-size: 0.875rem;
+    }
+  }
+  .accordion-content.active {
+    .collapsible-header > .arrow {
+      transform: rotate(180deg);
+    }
+  }
+  .collapsible-header {
+    > i {
+      line-height: 32px;
+      transition: all 0.3s ease;
+      transform-origin: center;
+      height: 28px;
+      width: 28px;
+    }
+    h6 {
+      margin: 0;
+      flex: 1;
+    }
+  }
+  .collapsible-body {
+    padding: 0 1rem;
+  }
+}
+
+.m-application.theme--dark {
+  .card {
+    box-shadow: 0px 1px 3px 0px rgba(64, 64, 64, 1), 0px 1px 1px 0px rgba(42, 42, 42, 1), 0px 2px 1px -1px rgba(20, 20, 20, 1)
+  }
+}
+
+.m-application.theme--light {
+  .card {
+    box-shadow: 0 1.5px 12px 2px rgba(0, 0, 0, 0.06);
+  }
+}
+
+.m-content {
+  -webkit-box-flex: 1;
+  flex: 1 1 auto;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 100%;
+  position: relative;
+}
+
+/* Content Overider */
+#main-wrap .container {
+  padding: 0 16px;
+  max-width: 1280px;
+  width: auto;
+  @media (min-width: 600px) {
+    padding: 0 24px
+  }
+  @media (min-width: 960px) {
+    padding: 0 32px
+  }
+  &.fixed-width {
+    @media (min-width: 600px) {
+      max-width: 600px;
+    }
+    @media (min-width: 960px) {
+      max-width: 960px;
+    }
+    @media (min-width: 1280px) {
+      max-width: 1280px;
+    }
+  }
+  &.max-lg {
+    max-width: 1280px
+  }
+  &.max-md {
+    max-width: 960px
+  }
+  &.max-sm {
+    max-width: 600px
+  }
+  &.max-xs {
+    max-width: 444px
+  }
+}
+
+.card .card-action a:not(.btn):not(.btn-small):not(.btn-large):not(.btn-large):not(.btn-floating) {
+  color: $palette-primary-main !important;
+  padding: 0;
+}
+
+select.select {
+  display: none;
+}
+
+.dropdown-content li > a, .dropdown-content li > span {
+  @include palette-text-primary
+}
+

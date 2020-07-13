@@ -1,0 +1,109 @@
+/* Theme Base Color Variable */
+
+.theme--light {
+  // Background
+  --bg-0: #FFF;
+  --bg-1: #fafafa;
+  --bg-2: #f5f5f5;
+  --bg-3: #eeeeee;
+  --bg-4: #e0e0e0;
+  --bg-5: #bdbdbd;
+  // Divider
+  --div-0: rgba(0, 0, 0, 0.04);
+  --div-1: rgba(0, 0, 0, 0.12);
+  --div-2: rgba(0, 0, 0, 0.26);
+  --div-3: rgba(0, 0, 0, 0.39);
+  --div-4: rgba(0, 0, 0, 0.49);
+  --div-5: rgba(0, 0, 0, 0.7);
+  // Shadow
+  --sd-0: rgba(0, 0, 0, 0.12);
+  --sd-1: rgba(0, 0, 0, 0.14);
+  --sd-2: rgba(0, 0, 0, 0.2);
+  // Content
+  --con-0: #000;
+  --con-1: rgba(0, 0, 0, 0.87);
+  --con-2: rgba(0, 0, 0, 0.54);
+  --con-3: rgba(0, 0, 0, 0.38);
+  --con-4: rgba(0, 0, 0, 0.12);
+  --con-5: rgba(0, 0, 0, 0.08);
+  background: #FFF;
+  color: rgba(0, 0, 0, 0.87);
+  input, select, textarea {
+    color: rgba(0, 0, 0, 0.87);
+  }
+}
+
+.theme--dark {
+  // Base
+  --bg-0: #424242;
+  --bg-1: #303030;
+  --bg-2: #212121;
+  --bg-3: #757575;
+  --bg-4: #616161;
+  --bg-5: #000;
+  // Divider
+  --div-0: rgba(255, 255, 255, 0.04);
+  --div-1: rgba(255, 255, 255, 0.12);
+  --div-2: rgba(255, 255, 255, 0.26);
+  --div-3: rgba(255, 255, 255, 0.39);
+  --div-4: rgba(255, 255, 255, 0.49);
+  --div-5: rgba(255, 255, 255, 0.7);
+  // Shadow
+  --sd-1: rgba(0, 0, 0, 0.42);
+  --sd-2: rgba(0, 0, 0, 0.44);
+  --sd-3: rgba(0, 0, 0, 0.6);
+  // Content
+  
+  --con-0: #fff;
+  --con-1: rgba(255, 255, 255, 0.87);
+  --con-2: rgba(255, 255, 255, 0.5);
+  --con-3: rgba(255, 255, 255, 0.36);
+  --con-4: rgba(255, 255, 255, 0.12);
+  --con-5: rgba(255, 255, 255, 0.08);
+  background: #303030;
+  color: #FFF;
+  input, select, textarea {
+    color: rgba(255, 255, 255, 0.87);
+  }
+}
+
+
+
+// Base Color
+$bg-0: var(--bg-0);
+$bg-1: var(--bg-1);
+$bg-2: var(--bg-2);
+$bg-3: var(--bg-3);
+$bg-4: var(--bg-4);
+$bg-5: var(--bg-5);
+
+// Divider, Border
+$div-0: var(--div-0);
+$div-1: var(--div-1);
+$div-2: var(--div-2);
+$div-3: var(--div-3);
+$div-4: var(--div-4);
+$div-5: var(--div-5);
+
+// Shadow
+$sd-0: var(--sd-0);
+$sd-1: var(--sd-1);
+$sd-2: var(--sd-2);
+
+// Content and Text color
+$con-0: var(--con-0);
+$con-1: var(--con-1);
+$con-2: var(--con-2);
+$con-3: var(--con-3);
+$con-4: var(--con-4);
+$con-5: var(--con-5);
+
+// Primary and secondary color
+$palette-primary-main: var(--v-primary-base);
+$palette-primary-light: var(--v-primarylight-base);
+$palette-primary-dark: var(--v-primarydark-base);
+
+// Theme color palette secondary
+$palette-secondary-main: var(--v-secondary-base);
+$palette-secondary-light: var(--v-secondarylight-base);
+$palette-secondary-dark: var(--v-secondarydark-base);

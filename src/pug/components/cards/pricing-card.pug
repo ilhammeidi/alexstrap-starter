@@ -1,0 +1,17 @@
+mixin pricing-card(title, subheader, price, description, buttonText, buttonVariant)
+  .card.center-box.price-card
+    .card-title.price-header.justify-center
+      h5.text-xs-center.headline #{title}
+      .small-title.text-xs-center.body-1  #{subheader}
+      if title === 'Pro'
+        .icon.ion-ios-star-outline
+    .card-text.p-4
+      .card-pricing
+        h2.price.text-xs-center.display-2 $ #{price}
+        h6.title
+          | / mo
+      ul
+        each line in description
+          li.text-center.subtitle-1 #{line}
+    .text-center.p-4
+      button.btn.primary.waves-effect.block(class=buttonVariant === "outlined" && "btn-outlined") #{buttonText}

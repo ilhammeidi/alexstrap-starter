@@ -1,0 +1,15 @@
+@import "api";
+
+@mixin rtl-sass-left($value) {
+  @include rtl-sass-declaration(left, $value, null);
+  @include rtl-sass-declaration(right, null, $value);
+}
+
+@mixin rtl-sass-right($value) {
+  @include rtl-sass-declaration(right, $value, null);
+  @include rtl-sass-declaration(left, null, $value);
+}
+
+@mixin rtl-sass-float($value) {
+  @include rtl-sass-declaration-value(float, $value);
+}

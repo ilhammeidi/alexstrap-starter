@@ -1,0 +1,31 @@
+extends ../layouts/app.pug
+
+block variables
+  - var pageTitle = "Landing Page"
+block content
+  div
+    #home
+    .main-wrap
+      include ../components/header/header.pug
+      main.container-wrap
+        section
+          .container
+            include ../components/animate-slider.pug
+        section#feature.space-top.space-bottom
+          .container
+            include ../components/feature/feature.pug
+        section
+          include ../components/counter.pug
+        section#testimonials.space-top
+          include ../components/testimonials.pug
+        section#pricing.space-top
+          include ../components/pricing.pug
+        section#blog.space-top.space-bottom
+          include ../components/blog.pug
+        section#subscribe
+          include ../components/subscribe-form.pug
+      .hidden-md-down
+        include ../components/notifications.pug
+      .hidden-md-down
+        include ../components/page-nav.pug
+      include ../components/footer.pug

@@ -1,0 +1,16 @@
+@import "api";
+
+// padding
+@mixin rtl-sass-padding-left($value) {
+  @include rtl-sass-declaration(padding-left, $value, null);
+  @include rtl-sass-declaration(padding-right, null, $value);
+}
+
+@mixin rtl-sass-padding-right($value) {
+  @include rtl-sass-declaration(padding-right, $value, null);
+  @include rtl-sass-declaration(padding-left, null, $value);
+}
+
+@mixin rtl-sass-padding($top, $right: null, $bottom: null, $left: null) {
+  @include rtl-sass-declaration-1-to-4(padding, $top, $right, $bottom, $left);
+}

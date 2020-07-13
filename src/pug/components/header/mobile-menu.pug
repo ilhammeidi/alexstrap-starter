@@ -1,0 +1,10 @@
+#slide-menu.sidenav.mobile-nav
+  ul.collection
+    each item in menu.starter
+      li.collection-item
+        a.sidenav-close.waves-effect.menu-list(href='#' + item.name) #{item.name}
+  .dropdown-divider
+  ul.collection
+    each item in ['Login', 'Register', 'Contact']
+      li.collection-item
+        a.sidenav-close.waves-effect.menu-list(href='/' + item) #{item}

@@ -1,0 +1,43 @@
+mixin settings(invert)
+  .menu-setting
+    - var locales = ['ar','de','en','id','pt','zh']
+    .setting
+      button.btn.btn-icon.waves-effect.btn-small.m-2.dropdown-trigger(
+        data-target="dropdown_config"
+        data-align=doc_dir === "rtl" ? "right" : "left"
+        type="button"
+      )
+        i.icon.material-icons#setting_icon(
+          class=invert && "invert"
+        ) settings
+      .dropdown-content#dropdown_config
+        ul.collection.with-header
+          li.collection-header #{$t.starter.header_theme}
+          li.collection-item.no-hover.pl-4
+            .flex-menu
+              .switch
+                |
+                |
+                label
+                  | #{$t.starter.header_light}
+                  input#theme_switcher(type='checkbox')
+                  span.lever
+                  | #{$t.starter.header_dark}
+                |
+                |
+        .dropdown-divider
+        ul#lang_menu.collection.with-header.lang-menu
+          li.collection-header #{$t.starter.header_language}
+          each locale in locales
+            li.collection-item.lang-list.waves-effect.avatar
+              |
+              |
+              a(data-lang=locale href="#")
+                .flag.circle
+                  i(class=locale)
+                |
+                |
+                span.content.lang-opt.text-truncate #{$t.common[locale]}
+              |
+              |
+  

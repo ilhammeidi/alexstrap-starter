@@ -1,0 +1,94 @@
+// 1.Button styles
+$button-disabled-background: $bg-2;
+$button-disabled-color: $bg-5;
+$button-flat-color: $con-1;
+$button-flat-disabled-color: $con-4;
+$button-floating-background: $palette-secondary-main;
+$button-large-height: 48px;
+
+// 3.Cards
+$card-bg-color: $bg-0;
+
+// 4.Collapsible
+$collapsible-header-color: $bg-0;
+$collapsible-border-color: $bg-4;
+
+// 5.Date + Time Picker
+$datepicker-weekday-color: $con-1;
+$datepicker-year: $bg-5;
+$datepicker-focus: $div-0;
+$datepicker-disabled-day-color: $con-3;
+$timepicker-clock-color: $con-2;
+$timepicker-clock-plate-bg: $bg-3;
+$datepicker-weekday-bg: $palette-secondary-main;
+$datepicker-date-bg: $palette-secondary-main;
+$datepicker-selected: $palette-secondary-main;
+$datepicker-selected-outfocus: $palette-secondary-light;
+$datepicker-day-focus: $palette-secondary-light;
+
+// 6.Dropdown
+$dropdown-bg-color: $bg-0;
+$dropdown-color: $palette-secondary-main;
+
+// 7.Textfield
+$input-border-color: $div-2;
+$input-border: 1px solid $div-2;
+$input-background: $bg-0;
+$input-disabled-color: $con-4;
+$input-disabled-solid-color: $div-3;
+$placeholder-text-color: $con-2;
+$input-focus-color: $palette-secondary-main;
+
+// 8.Radio
+$radio-empty-color: $con-4;
+$radio-fill-color: $palette-secondary-main;
+
+// 9.Select
+$select-border: 1px solid $div-5;
+$select-background: $bg-0;
+$select-option-hover: $con-5;
+$select-option-focus: $con-5;
+$select-option-selected: $bg-2;
+$select-disabled-color: $con-2;
+$select-focus: 1px $palette-secondary-light;
+
+// 10.Tables
+$table-border-color: $con-4;
+$table-striped-color: $div-0;
+
+
+// 11.Typography
+$off-black: $con-1;
+
+// 12.Collection
+$collection-border-color: $div-0;
+$collection-bg-color: $bg-0;
+$collection-hover-bg-color: $bg-3;
+$collection-active-bg-color: $palette-secondary-main;
+$collection-active-color: $palette-secondary-light;
+$collection-link-color: $palette-secondary-main;
+
+// 13.Chip
+$chip-bg-color: $bg-2;
+$chip-border-color: $div-3;
+
+// 14. Side Navigation
+$sidenav-font-color: $con-1;
+$sidenav-bg-color: $bg-0;
+
+// 15. Tabs
+$tabs-bg-color: $bg-0;
+$tabs-text-color: $palette-primary-main;
+
+// 16. Badge
+$badge-bg-color: $palette-secondary-main;
+
+// 17. Switches
+$switch-checked-lever-bg: $palette-secondary-light;
+$switch-unchecked-bg: $bg-3;
+
+// 18. Spinner
+$spinner-default-color: $palette-secondary-main;
+
+// 20. Footer
+$footer-bg-color: $palette-primary-main;

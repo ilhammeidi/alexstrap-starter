@@ -1,0 +1,52 @@
+-
+  var testiContent = [
+    {
+      text: 'Sed imperdiet enim ligula, vitae viverra justo porta vel.',
+      avatar: imgAPI.avatar[10],
+      name: 'Alex Tebalek - CTO La Lieur'
+    },
+    {
+      text: 'Cras convallis lacus orci, tristique tincidunt magna consequat in. In vel pulvinar est, at euismod libero.',
+      avatar: imgAPI.avatar[1],
+      name: 'Jean Doe - VP Company'
+    },
+    {
+      text: 'Cras convallis lacus orci, tristique tincidunt magna consequat in. In vel pulvinar est, at euismod libero.',
+      avatar: imgAPI.avatar[2],
+      name: 'Jena Doe - Graphic Designer'
+    },
+    {
+      text: 'Sed imperdiet enim ligula, vitae viverra justo porta vel.',
+      avatar: imgAPI.avatar[3],
+      name: 'Jovelin - Senior Graphic Designer'
+    },
+    {
+      text: 'Cras convallis lacus orci, tristique tincidunt magna consequat in. In vel pulvinar est, at euismod libero.',
+      avatar: imgAPI.avatar[4],
+      name: 'Jihan Doe - CEO Software House'
+    },
+    {
+      text: 'Cras convallis lacus orci, tristique tincidunt magna consequat in. In vel pulvinar est, at euismod libero.',
+      avatar: imgAPI.avatar[6],
+      name: 'Jovelin - Senior Graphic Designer'
+    },
+    {
+      text: 'Cras convallis lacus orci, tristique tincidunt magna consequat in. In vel pulvinar est, at euismod libero.',
+      avatar: imgAPI.avatar[7],
+      name: 'Jovelin - Senior Graphic Designer'
+    }
+  ]
+
+include cards/testi-card
+// #### TESTIMONIALS ####
+.testimonial-wrap
+  h3.display-2.text-center.mb-4
+    | Testimonials
+  p.body-1.text-center.mb-4
+    | Curabitur egestas consequat lorem, vel fermentum augue porta id.
+  .carousel
+    .slick-carousel
+      each item in testiContent
+        .item
+          +testi-card(item.text, item.name, item.avatar)
+// #### END TESTIMONIALS ####

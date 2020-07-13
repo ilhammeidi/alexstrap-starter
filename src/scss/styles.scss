@@ -1,0 +1,61 @@
+/*
+** RTL Mixins including margin, pading, position, border and border radius
+** See documentation https://www.npmjs.com/package/rtl-sass
+*/
+@import './vendors/rtl-sass/rtl';
+
+/*
+** Variables, Functions and Mixins
+*/
+
+// Custom variable
+@import './utils/variables';
+
+// Custom mixins
+@import './utils/mixins';
+
+// Custom functions
+@import './utils/functions';
+
+// Custom media queries
+@import './utils/media-queries';
+
+// Commons scss class
+@import './utils/common';
+
+// Page transition
+@import './utils/transition';
+
+// Image API variable
+@import './utils/url-img';
+
+// Materialize and Bootstrap overide
+@import './utils/overide';
+
+// Materialize extended style
+@import './utils/material_extends';
+
+// Bootstrap custom media query for grid
+@import './utils/grid';
+
+// Bootstrap additional spacing
+@import './utils/spacing';
+
+/*
+** Components and Pages
+*/
+
+@import './components/header';
+@import './components/animate-slider';
+@import './components/feature';
+@import './components/counter';
+@import './components/cards';
+@import './components/testimonials';
+@import './components/pricing';
+@import './components/blog';
+@import './components/subscribe';
+@import './components/footer';
+@import './components/page-nav';
+@import './components/notification';
+
+@import './pages/home';

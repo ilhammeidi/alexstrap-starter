@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Alexstrap Starter - HTML5 Starter Template">
+  <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no"><!-- Favicon-->
+  <link rel="shortcut icon" href="./assets/favicons/favicon.ico">
+  <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./assets/favicons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./assets/favicons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./assets/favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./assets/favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./assets/favicons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./assets/favicons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./assets/favicons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./assets/favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicons/favicon-16x16.png">
+  <link rel="manifest" href="./assets/favicons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="./assets/favicons/ms-icon-144x144.png"><!-- PWA primary color-->
+  <meta name="theme-color" content="#9c27b0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"><!-- Facebook-->
+  <meta property="author" content="luxi">
+  <meta property="og:site_name" content="alexstrap.ux-maestro.com">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="website"><!-- Twitter-->
+  <meta property="twitter:site" content="luxi.ux-maestro.com">
+  <meta property="twitter:domain" content="luxi.ux-maestro.com">
+  <meta property="twitter:creator" content="luxi">
+  <meta property="twitter:card" content="summary">
+  <meta property="twitter:image:src" content="./assets/images/logo.png">
+  <meta property="og:url" content="alexstrap.ux-maestro.com">
+  <meta property="og:title" content="Starter Project">
+  <meta property="og:description" content="Alexstrap Starter - HTML5 Starter Template">
+  <meta name="twitter:site" content="alexstrap.ux-maestro.com">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="/images/logo.png">
+  <meta property="og:image" content="/images/logo.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <title>Alexstrap Starter - Landing Page </title><!-- Styles-->
+  <!-- Put the 3rd/plugins css here-->
+  <link href="./assets/css/vendors/normalize.css" rel="stylesheet">
+  <link href="./assets/css/vendors/bootstrap.css" rel="stylesheet">
+  <link href="./assets/css/vendors/jquery.youtubebackground.css" rel="stylesheet">
+  <link href="./assets/css/vendors/materialize.css" rel="stylesheet">
+  <link href="./assets/css/vendors/hamburger-menu.css" rel="stylesheet">
+  <link href="./assets/css/vendors/jquery.animateSlider.css" rel="stylesheet">
+  <link href="./assets/css/vendors/animate.css" rel="stylesheet">
+  <link href="./assets/css/vendors/animate-extends.css" rel="stylesheet">
+  <link href="./assets/css/vendors/slick-carousel/slick.css" rel="stylesheet">
+  <link href="./assets/css/vendors/slick-carousel/slick-theme.css" rel="stylesheet">
+  <link href="./assets/css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="preloader" style="position: fixed; z-index: 10000; background: #fafafa; width: 100%; height: 100%"><img style="opacity: 0.5; position: fixed; top: calc(50% - 50px); left: calc(50% - 50px)" src="./assets/images/loading.gif" alt="loading"></div>
+  <div class="m-application theme--light transition-page" id="app">
+    <div class="loading"></div>
+    <div class="m-content purple-var" id="main-wrap">
+      <div>
+        <div id="home"></div>
+        <div class="main-wrap">
+          <!-- #### HEADER ####-->
+          <div class="sidenav mobile-nav" id="slide-menu">
+            <ul class="collection">
+              <li class="collection-item"><a class="sidenav-close waves-effect menu-list" href="#feature">feature</a></li>
+              <li class="collection-item"><a class="sidenav-close waves-effect menu-list" href="#testimonials">testimonials</a></li>
+              <li class="collection-item"><a class="sidenav-close waves-effect menu-list" href="#pricing">pricing</a></li>
+              <li class="collection-item"><a class="sidenav-close waves-effect menu-list" href="#blog">blog</a></li>
+              <li class="collection-item"><a class="sidenav-close waves-effect menu-list" href="#subscribe">subscribe</a></li>
+            </ul>
+            <div class="dropdown-divider"></div>
+            <ul class="collection">
+              <li class="collection-item"><a class="sidenav-close waves-effect menu-list" href="/Login">Login</a></li>
+              <li class="collection-item"><a class="sidenav-close waves-effect menu-list" href="/Register">Register</a></li>
+              <li class="collection-item"><a class="sidenav-close waves-effect menu-list" href="/Contact">Contact</a></li>
+            </ul>
+          </div>
+          <header class="app-bar header" id="header">
+            <div class="container">
+              <div class="header-content">
+                <nav class="nav-menu">
+                  <button class="btn-icon waves-effect sidenav-trigger show-md-down" id="mobile_menu" type="button"><i class="material-icons">menu</i></button>
+                  <div class="logo">
+                    <a href="#home"><img src="./assets/images/logo.png" alt="logo"></a>
+                  </div>
+                  <div class="scrollactive-nav scrollnav show-lg-up">
+                    <ul>
+                      <li><a class="btn btn-flat anchor-link waves-effect" href="#feature">feature</a></li>
+                      <li><a class="btn btn-flat anchor-link waves-effect" href="#testimonials">testimonials</a></li>
+                      <li><a class="btn btn-flat anchor-link waves-effect" href="#pricing">pricing</a></li>
+                      <li><a class="btn btn-flat anchor-link waves-effect" href="#blog">blog</a></li>
+                      <li><a class="btn btn-flat anchor-link waves-effect" href="#subscribe">subscribe</a></li>
+                    </ul>
+                  </div>
+                </nav>
+                <nav class="user-menu">
+                  <button class="btn btn-flat waves-effect show-lg-up" type="button">Login</button>
+                  <button class="btn waves-effect primary" type="button">Register</button>
+                  <span class="spacer vertical-divider show-lg-up"></span>
+                  <div class="menu-setting">
+                    <div class="setting"><button class="btn btn-icon waves-effect btn-small m-2 dropdown-trigger" data-target="dropdown_config" data-align="left" type="button"><i class="icon material-icons invert" id="setting_icon">settings</i></button>
+                      <div class="dropdown-content" id="dropdown_config">
+                        <ul class="collection with-header">
+                          <li class="collection-header">theme mode</li>
+                          <li class="collection-item no-hover pl-4">
+                            <div class="flex-menu">
+                              <div class="switch">
+                                <label>light<input id="theme_switcher" type="checkbox"><span class="lever"></span>dark</label>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                        <div class="dropdown-divider"></div>
+                        <ul class="collection with-header lang-menu" id="lang_menu">
+                          <li class="collection-header">language</li>
+                          <li class="collection-item lang-list waves-effect avatar">
+                            <a data-lang="ar" href="#">
+                              <div class="flag circle"><i class="ar"></i></div>
+                              <span class="content lang-opt text-truncate">󠁥󠁮󠁧󠁿العربيّة</span>
+                            </a>
+                          </li>
+                          <li class="collection-item lang-list waves-effect avatar">
+                            <a data-lang="de" href="#">
+                              <div class="flag circle"><i class="de"></i></div>
+                              <span class="content lang-opt text-truncate">Deutsch</span>
+                            </a>
+                          </li>
+                          <li class="collection-item lang-list waves-effect avatar">
+                            <a data-lang="en" href="#">
+                              <div class="flag circle"><i class="en"></i></div>
+                              <span class="content lang-opt text-truncate">English</span>
+                            </a>
+                          </li>
+                          <li class="collection-item lang-list waves-effect avatar">
+                            <a data-lang="id" href="#">
+                              <div class="flag circle"><i class="id"></i></div>
+                              <span class="content lang-opt text-truncate">󠁥󠁮󠁧󠁿Bahasa Indonesia</span>
+                            </a>
+                          </li>
+                          <li class="collection-item lang-list waves-effect avatar">
+                            <a data-lang="pt" href="#">
+                              <div class="flag circle"><i class="pt"></i></div>
+                              <span class="content lang-opt text-truncate">󠁥󠁮󠁧󠁿Português</span>
+                            </a>
+                          </li>
+                          <li class="collection-item lang-list waves-effect avatar">
+                            <a data-lang="zh" href="#">
+                              <div class="flag circle"><i class="zh"></i></div>
+                              <span class="content lang-opt text-truncate">简体中文</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </header>
+          <!-- #### END HEADER ####-->
+          <main class="container-wrap">
+            <section>
+              <div class="container">
+                <!-- #### ANIMATE SLIDER ####-->
+                <div class="hero-content">
+                  <div class="slider-wrapper anim-slider">
+                    <div class="slide slider-content anim-slide">
+                      <section class="inner" style="background: url(https://via.placeholder.com/675x900/e1ad92/fff) no-repeat center center">
+                        <h1>A simple example</h1>
+                        <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras justo odio, dapibus ac facilisis.</p>
+                        <div class="hero-buttons d-flex justify-content-center">
+                          <button class="btn primary waves-effect mx-2">Main call to action</button>
+                          <button class="btn-outlined waves-effect white mx-2">Secondary action</button></div>
+                        <footer>
+                          <img src="https://avatars.dicebear.com/api/avataaars/as.svg" alt="Luanda Gjokaj" />
+                          <span>Posted by&nbsp;<strong>Luanda Gjokaj</strong></span>
+                        </footer>
+                      </section>
+                    </div>
+                    <div class="slide slider-content anim-slide">
+                      <section class="inner" style="background: url(https://via.placeholder.com/967x725/ea6d6d/fff) no-repeat center center">
+                        <h1>A simple example</h1>
+                        <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec sed odio dui.</p>
+                        <div class="hero-buttons d-flex justify-content-center">
+                          <button class="btn primary waves-effect mx-2">Main call to action</button>
+                          <button class="btn-outlined waves-effect white mx-2">Secondary action</button></div>
+                        <footer>
+                          <img src="https://avatars.dicebear.com/api/avataaars/qwert.svg" alt="Erich Behrens" />
+                          <span>Posted by&nbsp;<strong>Erich Behrens</strong></span>
+                        </footer>
+                      </section>
+                    </div>
+                    <div class="slide slider-content anim-slide">
+                      <section class="inner" style="background: url(https://via.placeholder.com/1280x849/ea6db7/fff) no-repeat center center">
+                        <h1>A simple example</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+                        <div class="hero-buttons d-flex justify-content-center">
+                          <button class="btn primary waves-effect mx-2">Main call to action</button>
+                          <button class="btn-outlined waves-effect white mx-2">Secondary action</button></div>
+                        <footer>
+                          <img src="https://avatars.dicebear.com/api/avataaars/qwert.svg" alt="Bruno Vizovskyy" />
+                          <span>Posted by&nbsp;<strong>Bruno Vizovskyy</strong></span>
+                        </footer>
+                      </section>
+                    </div>
+                    <div class="anim-arrows">
+                      <a class="anim-arrows-prev" href="#">&#x276E;</a>
+                      <a class="anim-arrows-next" href="#">&#x276F;</a>
+                    </div>
+                  </div>
+                </div><!-- #### END ANIMATE SLIDER ####-->
+              </div>
+            </section>
+            <section class="space-top space-bottom" id="feature">
+              <div class="container">
+                <div>
+                  <div class="parallax-wrap">
+                    <div class="container">
+                      <div class="banner-parallax-wrap">
+                        <div class="figure">
+                          <div>
+                            <div data-enllax-ratio="-0.2" data-enllax-type="foreground"><svg class="parallax-vertical parallax-dot" width="645px" height="1099px">
+                                <use xlink:href="./assets/images/decoration/dot-deco.svg#dot"></use>
+                              </svg></div>
+                          </div>
+                        </div>
+                        <div class="figure">
+                          <div>
+                            <div data-enllax-ratio="-0.25" data-enllax-type="foreground"><svg class="parallax-vertical parallax-triangle" width="902px" height="1042px">
+                                <use xlink:href="./assets/images/decoration/triangle-deco.svg#triangle"></use>
+                              </svg></div>
+                          </div>
+                        </div>
+                        <div class="figure">
+                          <div>
+                            <div data-enllax-ratio="-0.2" data-enllax-type="foreground"><svg class="parallax-vertical parallax-circle" width="600px" height="570px">
+                                <use xlink:href="./assets/images/decoration/circle-deco.svg#circle"></use>
+                              </svg></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- #### MAIN FEATURE ####-->
+                  <div class="page-section">
+                    <div class="row">
+                      <div class="col-sm-4 pa-6 py-md-0">
+                        <div class="feature-list">
+                          <div class="icon primary material-icons">brightness_7</div>
+                          <h5 class="headline">Lorem ipsum dolor</h5>
+                          <p class="body-1">Quos blanditiis tenetur unde suscipit, quam beatae rerum inventore consectetur, neque doloribus.</p>
+                        </div>
+                      </div>
+                      <div class="col-sm-4 pa-6 py-md-0">
+                        <div class="feature-list">
+                          <div class="icon primary material-icons">sports_tennis</div>
+                          <h5 class="headline">Lorem ipsum dolor</h5>
+                          <p class="body-1">Quos blanditiis tenetur unde suscipit, quam beatae rerum inventore consectetur, neque doloribus.</p>
+                        </div>
+                      </div>
+                      <div class="col-sm-4 pa-6 py-md-0">
+                        <div class="feature-list">
+                          <div class="icon primary material-icons">videogame_asset</div>
+                          <h5 class="headline">Lorem ipsum dolor</h5>
+                          <p class="body-1">Quos blanditiis tenetur unde suscipit, quam beatae rerum inventore consectetur, neque doloribus.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- #### END MAIN FEATURE ####-->
+                  <!-- #### MORE FEATURE ####-->
+                  <div class="feature-more">
+                    <div class="container" id="mode_feature">
+                      <div class="row">
+                        <div class="col-md-6 px-6">
+                          <div class="feature-item">
+                            <div class="wow fadeInLeft" data-wow-duration="0.6s">
+                              <h3 class="title-app display-2">Lorem ipsum dolor</h3>
+                            </div>
+                            <div class="wow fadeInLeft" data-wow-delay="0.3s" data-wow-duration="0.6s">
+                              <p class="text">Quos blanditiis tenetur unde suscipit, quam beatae rerum inventore consectetur, neque doloribus.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6 px-6">
+                          <div class="feature-item">
+                            <div class="wow zoomIn" data-wow-delay="0.3s" data-wow-duration="0.6s">
+                              <div class="deco1"></div>
+                            </div>
+                            <div class="wow fadeInRight" data-wow-delay="0.5s" data-wow-duration="0.6s">
+                              <figure class="img">
+                                <img src="https://via.placeholder.com/1050x700/6dc0ea/fff" alt="img" />
+                              </figure>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6 px-6">
+                          <div class="feature-item">
+                            <div class="wow zoomIn" data-wow-delay="0.3s" data-wow-duration="0.6s">
+                              <div class="deco1"></div>
+                            </div>
+                            <div class="wow fadeInLeft" data-wow-delay="0.5s" data-wow-duration="0.6s">
+                              <figure class="img">
+                                <img src="https://via.placeholder.com/675x900/e1ad92/fff" alt="img" />
+                              </figure>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6 px-6">
+                          <div class="feature-item">
+                            <div class="wow fadeInLeft" data-wow-duration="0.6s">
+                              <h3 class="title-app display-2">Lorem ipsum dolor</h3>
+                            </div>
+                            <div class="wow fadeInRight" data-wow-delay="0.5s" data-wow-duration="0.6s">
+                              <p class="text">Quos blanditiis tenetur unde suscipit, quam beatae rerum inventore consectetur, neque doloribus.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12 px-6">
+                          <div class="feature-item last text-center">
+                            <div class="wow fadeInUp" data-wow-duration="0.6s">
+                              <h3 class="title-app display-2">Lorem ipsum dolor</h3>
+                            </div>
+                            <div class="wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.3s">
+                              <p class="text">Quos blanditiis tenetur unde suscipit, quam beatae rerum inventore consectetur, neque doloribus.</p>
+                            </div>
+                            <div class="wow zoomIn" data-wow-duration="0.6s" data-wow-delay="0.3s">
+                              <div class="deco2"></div>
+                            </div>
+                            <div class="wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.5s">
+                              <figure class="img-full">
+                                <img src="https://via.placeholder.com/967x725/ea6d6d/fff" alt="img" />
+                              </figure>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- #### END MORE FEATURE ####-->
+                </div>
+              </div>
+            </section>
+            <section>
+              <!-- #### COUNTER ####-->
+              <div class="counter-wrap" id="counter_target">
+                <div class="container">
+                  <div class="row justify-content-center align-items-center">
+                    <div class="col py-4">
+                      <div class="counter-item">
+                        <span class="icon ion-leaf"></span>
+                        <div class="text">
+                          <h4 class="display-1"><span class="numscroller" data-min="0" data-max="123" data-delay="5" data-increment="8">&nbsp;</span></h4>
+                          <h6 class="title">Lorem</h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col py-4">
+                      <div class="counter-item">
+                        <span class="icon ion-ios-lightbulb-outline"></span>
+                        <div class="text">
+                          <h4 class="display-1"><span class="numscroller" data-min="0" data-max="456" data-delay="5" data-increment="8">&nbsp;</span></h4>
+                          <h6 class="title">Lorem</h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col py-4">
+                      <div class="counter-item">
+                        <span class="icon ion-ios-world-outline"></span>
+                        <div class="text">
+                          <h4 class="display-1"><span class="numscroller" data-min="0" data-max="789" data-delay="5" data-increment="8">&nbsp;</span></h4>
+                          <h6 class="title">Lorem</h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- #### END COUNTER ####-->
+            </section>
+            <section class="space-top" id="testimonials">
+              <!-- #### TESTIMONIALS ####-->
+              <div class="testimonial-wrap">
+                <h3 class="display-2 text-center mb-4">Testimonials</h3>
+                <p class="body-1 text-center mb-4">Curabitur egestas consequat lorem, vel fermentum augue porta id.</p>
+                <div class="carousel">
+                  <div class="slick-carousel">
+                    <div class="item">
+                      <div class="card testi-card">
+                        <p class="body1">Sed imperdiet enim ligula, vitae viverra justo porta vel.</p>
+                        <div class="name">
+                          <img class="avatar-img" src="https://avatars.dicebear.com/api/avataaars/qwert.svg" alt="Alex Tebalek - CTO La Lieur" />
+                          <span class="caption">Alex Tebalek - CTO La Lieur</span></div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="card testi-card">
+                        <p class="body1">Cras convallis lacus orci, tristique tincidunt magna consequat in. In vel pulvinar est, at euismod libero.</p>
+                        <div class="name">
+                          <img class="avatar-img" src="https://avatars.dicebear.com/api/avataaars/as.svg" alt="Jean Doe - VP Company" />
+                          <span class="caption">Jean Doe - VP Company</span></div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="card testi-card">
+                        <p class="body1">Cras convallis lacus orci, tristique tincidunt magna consequat in. In vel pulvinar est, at euismod libero.</p>
+                        <div class="name">
+                          <img class="avatar-img" src="https://avatars.dicebear.com/api/avataaars/as.svg" alt="Jena Doe - Graphic Designer" />
+                          <span class="caption">Jena Doe - Graphic Designer</span></div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="card testi-card">
+                        <p class="body1">Sed imperdiet enim ligula, vitae viverra justo porta vel.</p>
+                        <div class="name">
+                          <img class="avatar-img" src="https://avatars.dicebear.com/api/avataaars/as.svg" alt="Jovelin - Senior Graphic Designer" />
+                          <span class="caption">Jovelin - Senior Graphic Designer</span></div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="card testi-card">
+                        <p class="body1">Cras convallis lacus orci, tristique tincidunt magna consequat in. In vel pulvinar est, at euismod libero.</p>
+                        <div class="name">
+                          <img class="avatar-img" src="https://avatars.dicebear.com/api/avataaars/as.svg" alt="Jihan Doe - CEO Software House" />
+                          <span class="caption">Jihan Doe - CEO Software House</span></div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="card testi-card">
+                        <p class="body1">Cras convallis lacus orci, tristique tincidunt magna consequat in. In vel pulvinar est, at euismod libero.</p>
+                        <div class="name">
+                          <img class="avatar-img" src="https://avatars.dicebear.com/api/avataaars/qwert.svg" alt="Jovelin - Senior Graphic Designer" />
+                          <span class="caption">Jovelin - Senior Graphic Designer</span></div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="card testi-card">
+                        <p class="body1">Cras convallis lacus orci, tristique tincidunt magna consequat in. In vel pulvinar est, at euismod libero.</p>
+                        <div class="name">
+                          <img class="avatar-img" src="https://avatars.dicebear.com/api/avataaars/qwert.svg" alt="Jovelin - Senior Graphic Designer" />
+                          <span class="caption">Jovelin - Senior Graphic Designer</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- #### END TESTIMONIALS ####-->
+            </section>
+            <section class="space-top" id="pricing">
+              <!-- #### PRICING ####-->
+              <div class="container">
+                <h3 class="display-2 text-center mb-4">Pricing and Plan</h3>
+                <p class="body-1 text-center mb-4">Curabitur egestas consequat lorem, vel fermentum augue porta id.</p>
+                <div class="pricing-wrap">
+                  <div class="row justify-content-center">
+                    <div class="col-md-9">
+                      <div class="row align-items-end">
+                        <div class="col-sm-4 px-3">
+                          <div class="card center-box price-card">
+                            <div class="card-title price-header justify-center">
+                              <h5 class="text-xs-center headline">Free</h5>
+                              <div class="small-title text-xs-center body-1"> </div>
+                            </div>
+                            <div class="card-text p-4">
+                              <div class="card-pricing">
+                                <h2 class="price text-xs-center display-2">$ 0</h2>
+                                <h6 class="title">/ mo</h6>
+                              </div>
+                              <ul>
+                                <li class="text-center subtitle-1">10 users included</li>
+                                <li class="text-center subtitle-1">2 GB of storage</li>
+                                <li class="text-center subtitle-1">Help center access</li>
+                                <li class="text-center subtitle-1">Email support</li>
+                              </ul>
+                            </div>
+                            <div class="text-center p-4"><button class="btn primary waves-effect block btn-outlined">Sign up for free</button></div>
+                          </div>
+                        </div>
+                        <div class="col-sm-4 px-3">
+                          <div class="card center-box price-card">
+                            <div class="card-title price-header justify-center">
+                              <h5 class="text-xs-center headline">Pro</h5>
+                              <div class="small-title text-xs-center body-1"> Most popular</div>
+                              <div class="icon ion-ios-star-outline"></div>
+                            </div>
+                            <div class="card-text p-4">
+                              <div class="card-pricing">
+                                <h2 class="price text-xs-center display-2">$ 15</h2>
+                                <h6 class="title">/ mo</h6>
+                              </div>
+                              <ul>
+                                <li class="text-center subtitle-1">20 users included</li>
+                                <li class="text-center subtitle-1">10 GB of storage</li>
+                                <li class="text-center subtitle-1">Help center access</li>
+                                <li class="text-center subtitle-1">Priority email support</li>
+                              </ul>
+                            </div>
+                            <div class="text-center p-4"><button class="btn primary waves-effect block">Get started</button></div>
+                          </div>
+                        </div>
+                        <div class="col-sm-4 px-3">
+                          <div class="card center-box price-card">
+                            <div class="card-title price-header justify-center">
+                              <h5 class="text-xs-center headline">Enterprise</h5>
+                              <div class="small-title text-xs-center body-1"> </div>
+                            </div>
+                            <div class="card-text p-4">
+                              <div class="card-pricing">
+                                <h2 class="price text-xs-center display-2">$ 30</h2>
+                                <h6 class="title">/ mo</h6>
+                              </div>
+                              <ul>
+                                <li class="text-center subtitle-1">50 users included</li>
+                                <li class="text-center subtitle-1">30 GB of storage</li>
+                                <li class="text-center subtitle-1">Help center access</li>
+                                <li class="text-center subtitle-1">Phone &amp; email support</li>
+                              </ul>
+                            </div>
+                            <div class="text-center p-4"><button class="btn primary waves-effect block btn-outlined">Contact us</button></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- #### END PRICING ####-->
+            </section>
+            <section class="space-top space-bottom" id="blog">
+              <div class="container">
+                <h3 class="display-2 text-center mb-4">Blog and News</h3>
+                <p class="body-1 text-center mb-4">Curabitur egestas consequat lorem, vel fermentum augue porta id.</p>
+                <div class="blog-wrap" id="blog-list">
+                  <div class="row justify-content-center">
+                    <div class="col-md-9">
+                      <div class="row">
+                        <div class="col-md-4 px-3">
+                          <div class="card card-blog">
+                            <div class="card-image">
+                              <img src="https://source.unsplash.com/random" alt="blog image" />
+                            </div>
+                            <div class="card-content">
+                              <div class="card-title title">Heading</div>
+                              <p>This is a media card. You can use this section to describe the content.</p>
+                            </div>
+                            <div class="card-action"><a class="btn-flat waves-effect" href="#">This is a link</a></div>
+                          </div>
+                        </div>
+                        <div class="col-md-4 px-3">
+                          <div class="card card-blog">
+                            <div class="card-image">
+                              <img src="https://source.unsplash.com/random" alt="blog image" />
+                            </div>
+                            <div class="card-content">
+                              <div class="card-title title">Heading</div>
+                              <p>This is a media card. You can use this section to describe the content.</p>
+                            </div>
+                            <div class="card-action"><a class="btn-flat waves-effect" href="#">This is a link</a></div>
+                          </div>
+                        </div>
+                        <div class="col-md-4 px-3">
+                          <div class="card card-blog">
+                            <div class="card-image">
+                              <img src="https://source.unsplash.com/random" alt="blog image" />
+                            </div>
+                            <div class="card-content">
+                              <div class="card-title title">Heading</div>
+                              <p>This is a media card. You can use this section to describe the content.</p>
+                            </div>
+                            <div class="card-action"><a class="btn-flat waves-effect" href="#">This is a link</a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section id="subscribe">
+              <div class="subscribe-wrap">
+                <div class="row justify-content-center">
+                  <div class="col-md-12 px-4">
+                    <div class="card paper">
+                      <h5 class="text-center headline">Subscribe Our Newsletter</h5>
+                      <div class="form">
+                        <div class="row align-items-center">
+                          <div class="col-sm-9">
+                            <div class="input-field"><input id="standard-email" type="email"><label for="standard-email">Your Email</label></div>
+                          </div>
+                          <div class="col-sm-3"><button class="waves-effect btn primary">Send<i class="icon material-icons right">send</i></button></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </main>
+          <div class="hidden-md-down">
+            <div class="alert alert-dismissible fade show notification" role="alert">
+              <div class="wrapper">
+                <div class="content">
+                  <div class="action">Donec sit amet nulla sed arcu pulvinar ultricies commodo id ligula</div>
+                  <button class="btn btn-outlined waves-effect waves-light white" type="button" data-dismiss="alert" aria-label="Close">Accept</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hidden-md-down">
+            <div class="page-nav" id="page_nav">
+              <nav class="section-nav">
+                <div class="scrollnav">
+                  <ul>
+                    <li style="top: 150px"><a class="tooltipped" href="#feature" data-position="left" data-tooltip="feature"></a></li>
+                    <li style="top: 120px"><a class="tooltipped" href="#testimonials" data-position="left" data-tooltip="testimonials"></a></li>
+                    <li style="top: 90px"><a class="tooltipped" href="#pricing" data-position="left" data-tooltip="pricing"></a></li>
+                    <li style="top: 60px"><a class="tooltipped" href="#blog" data-position="left" data-tooltip="blog"></a></li>
+                    <li style="top: 30px"><a class="tooltipped" href="#subscribe" data-position="left" data-tooltip="subscribe"></a></li>
+                  </ul>
+                </div>
+              </nav>
+              <div class="scrollnav"><a class="btn-floating btn-large primary tooltipped waves-effect waves-light" href="#home" data-position="left" data-tooltip="To Top">
+                  <div class="icon material-icons">keyboard_arrow_up</div>
+                </a></div>
+            </div>
+          </div>
+          <footer class="container footer">
+            <div class="row">
+              <div class="col-md-3 pa-4">
+                <div class="logo">
+                  <img src="./assets/images/logo.png" alt="logo" />
+                  <h6 class="mb-4 title">Starter Project</h6>
+                </div>
+                <p class="body-2 text-center">&copy;
+                  Alexstrap Theme All Rights Reserved 2020</p>
+              </div>
+              <div class="col-md-6 pa-4">
+                <ul class="show-sm-down collapsible">
+                  <li class="accordion-content">
+                    <div class="collapsible-header">
+                      <h6 class="title mb-4">Company</h6><i class="material-icons right arrow">expand_more</i>
+                    </div>
+                    <div class="collapsible-body">
+                      <ul>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#history">History</a></li>
+                        <li><a href="#contact-us">Contact us</a></li>
+                        <li><a href="#locations">Locations</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="accordion-content">
+                    <div class="collapsible-header">
+                      <h6 class="title mb-4">Resources</h6><i class="material-icons right arrow">expand_more</i>
+                    </div>
+                    <div class="collapsible-body">
+                      <ul>
+                        <li><a href="#resource">Resource</a></li>
+                        <li><a href="#resource-name">Resource name</a></li>
+                        <li><a href="#another-resource">Another resource</a></li>
+                        <li><a href="#final-resource">Final resource</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="accordion-content">
+                    <div class="collapsible-header">
+                      <h6 class="title mb-4">Legal</h6><i class="material-icons right arrow">expand_more</i>
+                    </div>
+                    <div class="collapsible-body">
+                      <ul>
+                        <li><a href="#privacy-policy">Privacy policy</a></li>
+                        <li><a href="#terms-of-use">Terms of use</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+                <div class="row show-md-up justify-content-around">
+                  <div class="col pa-4 site-map-item">
+                    <h6 class="title mb-4">Company</h6>
+                    <ul>
+                      <li><a href="#team">Team</a></li>
+                      <li><a href="#history">History</a></li>
+                      <li><a href="#contact-us">Contact us</a></li>
+                      <li><a href="#locations">Locations</a></li>
+                    </ul>
+                  </div>
+                  <div class="col pa-4 site-map-item">
+                    <h6 class="title mb-4">Resources</h6>
+                    <ul>
+                      <li><a href="#resource">Resource</a></li>
+                      <li><a href="#resource-name">Resource name</a></li>
+                      <li><a href="#another-resource">Another resource</a></li>
+                      <li><a href="#final-resource">Final resource</a></li>
+                    </ul>
+                  </div>
+                  <div class="col pa-4 site-map-item">
+                    <h6 class="title mb-4">Legal</h6>
+                    <ul>
+                      <li><a href="#privacy-policy">Privacy policy</a></li>
+                      <li><a href="#terms-of-use">Terms of use</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 pa-4">
+                <div class="socmed">
+                  <a class="btn btn-icon waves-effect"><span class="ion-social-facebook icon"></span></a>
+                  <a class="btn btn-icon waves-effect"><span class="ion-social-twitter icon"></span></a>
+                  <a class="btn btn-icon waves-effect"><span class="ion-social-instagram icon"></span></a>
+                  <a class="btn btn-icon waves-effect"><span class="ion-social-linkedin icon"></span></a>
+                </div>
+                <div class="select-lang select-outlined">
+                  <select class="select" id="lang_select">
+                    <option value="ar">󠁥󠁮󠁧󠁿العربيّة</option>
+                    <option value="de">Deutsch</option>
+                    <option value="en" selected>English</option>
+                    <option value="id">󠁥󠁮󠁧󠁿Bahasa Indonesia</option>
+                    <option value="pt">󠁥󠁮󠁧󠁿Português</option>
+                    <option value="zh">简体中文</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </div><!-- Scripts-->
+  <!-- Put the 3rd/plugins javascript here-->
+  <script src="./assets/js/vendors/jquery.min.js"></script>
+  <script src="./assets/js/vendors/bootstrap.min.js"></script>
+  <script src="./assets/js/vendors/enquire.min.js"></script>
+  <script src="./assets/js/vendors/jquery.enllax.min.js"></script>
+  <script src="./assets/js/vendors/jquery.form-validator.min.js"></script>
+  <script src="./assets/js/vendors/jquery.touchSwipe.min.js"></script>
+  <script src="./assets/js/vendors/jquery.youtubebackground.js"></script>
+  <script src="./assets/js/vendors/pace.min.js"></script>
+  <script src="./assets/js/vendors/slick.min.js"></script>
+  <script src="./assets/js/vendors/wow.min.js"></script>
+  <script src="./assets/js/vendors/jquery.navScroll.min.js"></script><!-- This assets are not avalaible in npm.js or it has been costumized-->
+  <script src="./assets/js/vendors/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+  <script src="./assets/js/vendors/materialize.js"></script>
+  <script src="./assets/js/vendors/jquery.animateSlider.js"></script>
+  <script src="./assets/js/scripts.js"></script>
+</body>
+
+</html>

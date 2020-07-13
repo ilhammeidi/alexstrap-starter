@@ -1,0 +1,324 @@
+// Additional body height
+html {
+  height: 100%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+body {
+  min-height: 100%;
+}
+
+// Additional Button Styles
+$btn-radius: 4px !default;
+
+@mixin btn-hover {
+  &:before {
+    border-radius: $btn-radius;
+    bottom: 0;
+    color: inherit;
+    content: "";
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: currentColor;
+    -webkit-transition: opacity 0.2s cubic-bezier(0.4, 0, 0.6, 1);
+    transition: opacity 0.2s cubic-bezier(0.4, 0, 0.6, 1);
+  }
+  &:hover {
+    &:before {
+      opacity: 0.06
+    }
+  }
+}
+
+@mixin btn-style($border: none, $radius: 4px) {
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: .5px;
+  -webkit-transition: background-color .2s ease-out;
+  transition: background-color .2s ease-out;
+  cursor: pointer;
+  font-size: 14px;
+  outline: 0;
+  border: $border;
+  font-weight: $font-bold;
+  border-radius: $radius;
+  display: inline-block;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 16px;
+  text-transform: uppercase;
+  vertical-align: middle;
+  -webkit-tap-highlight-color: transparent;
+  @include btn-hover;
+}
+
+.btn {
+  border-radius: 4px;
+  background: none;
+  line-height: normal;
+  position: relative;
+  font-weight: $font-bold;
+  &.block {
+    width: 100%;
+  }
+  &-default {
+    @include palette-background-button;
+  }
+  &.primary {
+    background-color: $palette-primary-main;
+  }
+  &.secondary {
+    background-color: $palette-secondary-main;
+  }
+  &-flat {
+    font-weight: $font-medium;
+    &:hover {
+      background: none;
+    }
+  }
+  &-icon {
+    @include btn-style(none, 50%);
+    @include palette-text-secondary;
+    background: none !important;
+    box-shadow: none !important;
+    padding: 0;
+    width: 36px;
+    i {
+      line-height: 36px;
+    }
+    &:before {
+      border-radius: 50%;
+    }
+  }
+  &-outlined {
+    position: relative;
+    background-color: transparent !important;
+    @include btn-style(1px solid);
+    @include use-theme(border-color, $light-text-primary, $dark-text-primary);
+    box-shadow: none !important;
+    &.primary {
+      color: $palette-primary-main !important;
+      border-color: $palette-primary-main;
+      .waves-ripple {
+        background: $palette-primary-light
+      }
+    }
+    &.secondary {
+      color: $palette-secondary-main !important;
+      border-color: $palette-secondary-main;
+      .waves-ripple {
+        background: $palette-secondary-light
+      }
+    }
+    &.white {
+      color: #FFF;
+      border-color: rgba(255, 255, 255, 0.54);
+    }
+  }
+  &-floating {
+    &.primary {
+      background: $palette-primary-main !important;
+    }
+    &.secondary {
+      background: $palette-secondary-main !important;
+    }
+  }
+  @include btn-hover;
+}
+
+// Font Icons
+.icon {
+  &.primary {
+    color: $palette-primary-main;
+  }
+  &.secondary {
+    color: $palette-secondary-main;
+  }
+}
+
+// Collection Item
+.collection-item.no-hover:hover{
+  background: none;
+}
+
+// Typography
+.m-application .display-4 {
+  font-size: 6rem !important;
+  font-weight: 300;
+  line-height: 6rem;
+  letter-spacing: -0.015625em !important;
+}
+.m-application .display-3 {
+  font-size: 3.75rem !important;
+  font-weight: 300;
+  line-height: 3.75rem;
+  letter-spacing: -0.0083333333em !important;
+}
+.m-application .display-2 {
+  font-size: 3rem !important;
+  font-weight: 400;
+  line-height: 3.125rem;
+  letter-spacing: normal !important;
+}
+.m-application .display-1 {
+  font-size: 2.125rem !important;
+  font-weight: 400;
+  line-height: 2.5rem;
+  letter-spacing: 0.0073529412em !important;
+}
+.m-application .headline {
+  font-size: 1.5rem !important;
+  font-weight: 400;
+  line-height: 2rem;
+  letter-spacing: normal !important;
+}
+.m-application .title {
+  font-size: 1.25rem !important;
+  font-weight: 500;
+  line-height: 2rem;
+  letter-spacing: 0.0125em !important;
+}
+.m-application .subtitle-1 {
+  font-size: 1rem !important;
+  font-weight: 400;
+  letter-spacing: 0.009375em !important;
+  line-height: 1.75rem;
+}
+.m-application .subtitle-2 {
+  font-size: 0.875rem !important;
+  font-weight: 500;
+  letter-spacing: 0.0071428571em !important;
+  line-height: 1.375rem;
+}
+.m-application .body-2 {
+  font-size: 0.875rem !important;
+  font-weight: 400;
+  letter-spacing: 0.0178571429em !important;
+  line-height: 1.25rem;
+}
+.m-application .body-1 {
+  font-size: 1rem !important;
+  font-weight: 400;
+  letter-spacing: 0.03125em !important;
+  line-height: 1.5rem;
+}
+.m-application .caption {
+  font-size: 0.75rem !important;
+  font-weight: 400;
+  letter-spacing: 0.0333333333em !important;
+  line-height: 1.25rem;
+}
+.m-application .overline {
+  font-size: 0.625rem !important;
+  font-weight: 400;
+  letter-spacing: 0.1666666667em !important;
+  line-height: 1rem;
+  text-transform: uppercase;
+}
+.m-application p {
+  margin-bottom: 16px;
+}
+
+// Avatar
+.avatar-img {
+  width: 42px;
+  height: 42px;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 50%;
+  img {
+    width: 100%;
+  }
+  &.icon {
+    @include use-theme(background-color, #bdbdbd, #757575);
+    @include use-theme(color, #fff, #121212);
+  }
+  &.small {
+    width: 24px;
+    height: 24px;
+  }
+  &.big {
+    width: 56px;
+    height: 56px;
+  }
+}
+
+// Form
+.select {
+  &-outlined {
+    .select-wrapper input.select-dropdown {
+      border: 1px solid var(--div-2);
+      border-radius: $spacing1 / 2;
+      @include padding-left($spacing1);
+    }
+  }
+}
+
+.input-field {
+  input:-internal-autofill-selected {
+    background-color: transparent !important
+  }
+  &.primary {
+    input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):focus:not([readonly]), input[type=password]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]), input[type=url]:not(.browser-default):focus:not([readonly]), input[type=time]:not(.browser-default):focus:not([readonly]), input[type=date]:not(.browser-default):focus:not([readonly]), input[type=datetime]:not(.browser-default):focus:not([readonly]), input[type=datetime-local]:not(.browser-default):focus:not([readonly]), input[type=tel]:not(.browser-default):focus:not([readonly]), input[type=number]:not(.browser-default):focus:not([readonly]), input[type=search]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+      border-bottom-color: $palette-primary-main;
+      box-shadow: 0 1px 0 0 $palette-primary-main;
+    }
+    input:not([type]):focus:not([readonly]) + label, input[type=text]:not(.browser-default):focus:not([readonly]) + label, input[type=password]:not(.browser-default):focus:not([readonly]) + label, input[type=email]:not(.browser-default):focus:not([readonly]) + label, input[type=url]:not(.browser-default):focus:not([readonly]) + label, input[type=time]:not(.browser-default):focus:not([readonly]) + label, input[type=date]:not(.browser-default):focus:not([readonly]) + label, input[type=datetime]:not(.browser-default):focus:not([readonly]) + label, input[type=datetime-local]:not(.browser-default):focus:not([readonly]) + label, input[type=tel]:not(.browser-default):focus:not([readonly]) + label, input[type=number]:not(.browser-default):focus:not([readonly]) + label, input[type=search]:not(.browser-default):focus:not([readonly]) + label, textarea.materialize-textarea:focus:not([readonly]) + label {
+      color: $palette-primary-main
+    }
+  }
+  &.secondary {
+    input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):focus:not([readonly]), input[type=password]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]), input[type=url]:not(.browser-default):focus:not([readonly]), input[type=time]:not(.browser-default):focus:not([readonly]), input[type=date]:not(.browser-default):focus:not([readonly]), input[type=datetime]:not(.browser-default):focus:not([readonly]), input[type=datetime-local]:not(.browser-default):focus:not([readonly]), input[type=tel]:not(.browser-default):focus:not([readonly]), input[type=number]:not(.browser-default):focus:not([readonly]), input[type=search]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+      border-bottom-color: $palette-secondary-main;
+      box-shadow: 0 1px 0 0 $palette-secondary-main;
+    }
+    input:not([type]):focus:not([readonly]) + label, input[type=text]:not(.browser-default):focus:not([readonly]) + label, input[type=password]:not(.browser-default):focus:not([readonly]) + label, input[type=email]:not(.browser-default):focus:not([readonly]) + label, input[type=url]:not(.browser-default):focus:not([readonly]) + label, input[type=time]:not(.browser-default):focus:not([readonly]) + label, input[type=date]:not(.browser-default):focus:not([readonly]) + label, input[type=datetime]:not(.browser-default):focus:not([readonly]) + label, input[type=datetime-local]:not(.browser-default):focus:not([readonly]) + label, input[type=tel]:not(.browser-default):focus:not([readonly]) + label, input[type=number]:not(.browser-default):focus:not([readonly]) + label, input[type=search]:not(.browser-default):focus:not([readonly]) + label, textarea.materialize-textarea:focus:not([readonly]) + label {
+      color: $palette-secondary-main
+    }
+  }
+}
+
+[type=checkbox].filled-in.primary:checked + span:not(.lever):after {
+  border: 2px solid $palette-primary-main;
+  background-color: $palette-primary-main;
+}
+
+[type=checkbox].filled-in.secondary:checked + span:not(.lever):after {
+  border: 2px solid $palette-secondary-main;
+  background-color: $palette-secondary-main;
+}
+
+// Preloader
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  &-inactive {
+    display: none;
+  }
+  .pace-progress {
+    background: #2196f3;
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    right: 100%;
+    width: 100%;
+    height: 2px;
+  }
+}
+
+.justify-content-evenly {
+  justify-content: space-evenly !important;
+}
+
+.dropdown-divider {
+  @include palette-divider
+}
+

@@ -1,0 +1,68 @@
+.notification {
+  -webkit-box-align: center;
+  align-items: center;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: flex;
+  font-size: 14px;
+  left: 8px;
+  position: fixed;
+  right: 8px;
+  bottom: 0;
+  text-align: left;
+  -webkit-transition-duration: 0.15s;
+  transition-duration: 0.15s;
+  -webkit-transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  z-index: 9999;
+  width: 95%;
+  margin: 0 auto;
+  @include breakpoints-up(lg) {
+    width: 80%
+  }
+  .wrapper {
+    width: 100%;
+    margin-bottom: $spacing2;
+    max-width: none;
+    font-size: 16px;
+    color: $palette-common-white;
+    border-radius: 4px;
+        box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+    background: $palette-common-black;
+    @include breakpoints-up(sm) {
+      padding: spacing(0.5, 2)
+    }
+    .content {
+      -webkit-box-align: center;
+      align-items: center;
+      min-height: 48px;
+      overflow: hidden;
+      padding: 8px 16px;
+      width: 100%;
+      @include breakpoints-up(sm) {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        flex: 1;
+        @include margin-right($spacing2)
+      }
+      @include breakpoints-down(xs) {
+        text-align: center
+      }
+    }
+  }
+  .btn {
+    width: 100%;
+    @include breakpoints-up(sm) {
+      width: 150px;
+    }
+  }
+  .action {
+    @include breakpoints-down(xs) {
+      width: 100%;
+      padding: 0;
+      margin: $spacing1 0
+    }
+  }
+}

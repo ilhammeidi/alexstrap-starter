@@ -1,0 +1,20 @@
+@function section-margin($margin) {
+  @return $margin * 15;
+}
+.main-wrap {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.space-bottom {
+  margin-bottom: section-margin($spacing1);
+}
+.space-top {
+  padding-top: section-margin($spacing1);
+}
+.container-wrap {
+  margin-top: $spacing15;
+  & > section {
+    position: relative;
+  }
+}
