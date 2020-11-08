@@ -255,6 +255,7 @@ $btn-radius: 4px !default;
       border: 1px solid var(--div-2);
       border-radius: $spacing1 / 2;
       @include padding-left($spacing1);
+      box-sizing: border-box;
     }
   }
 }

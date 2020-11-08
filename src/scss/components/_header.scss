@@ -165,6 +165,12 @@ $flag: '../images/flag-logo.png';
   }
 }
 
+.collection .collection-item.avatar :not(.circle-clipper) > .circle.flag {
+  width: auto;
+  height: auto;
+  overflow: visible;
+}
+
 .lang-opt {
   display: block;
   padding: 0 !important;

@@ -28,7 +28,7 @@
   --v-secondarydark-base: #FF6F00;
 }
 
-.burgundy {
+.burgundy-var {
   --v-anchor-base: #e91e63;
   --v-primarylight-base: #f8bbd0;
   --v-primary-base: #e91e63;
@@ -101,12 +101,12 @@
 
 .violet-var {
   --v-anchor-base: #EC407A;
-  --v-primarylight-base: #FFF8E1;
-  --v-primary-base: #FFA000;
-  --v-primarydark-base: #FFA000;
-  --v-secondarylight-base: #FCE4EC;
-  --v-secondary-base: #EC407A;
-  --v-secondarydark-base: #D81B60;
+  --v-primarylight-base: #FCE4EC;
+  --v-primary-base: #EC407A;
+  --v-primarydark-base: #D81B60;
+  --v-secondarylight-base: #D1C4E9;
+  --v-secondary-base: #673AB7;
+  --v-secondarydark-base: #311B92;
 }
 
 .violeta-var {
@@ -121,12 +121,12 @@
 
 .roseGold-var {
   --v-anchor-base: #EC407A;
-  --v-primarylight-base: #FCE4EC;
-  --v-primary-base: #EC407A;
-  --v-primarydark-base: #D81B60;
-  --v-secondarylight-base: #FFF8E1;
-  --v-secondary-base: #FFA000;
-  --v-secondarydark-base: #FF6F00;
+  --v-primarylight-base: #FFF8E1;
+  --v-primary-base: #FFA000;
+  --v-primarydark-base: #FFA000;
+  --v-secondarylight-base: #FCE4EC;
+  --v-secondary-base: #EC407A;
+  --v-secondarydark-base: #D81B60;
 }
 
 .deepBlue-var {

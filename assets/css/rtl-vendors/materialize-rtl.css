@@ -5143,20 +5143,20 @@ button.btn-floating {
   cursor: default;
 }
 
-.btn-large:not(.btn-floating) {
-  height: 54px !important;
-  line-height: 54px !important;
-  font-size: 15px !important;
-  padding: 0 28px !important;
+.btn-large {
+  height: 48px;
+  line-height: 48px;
+  font-size: 15px;
+  padding: 0 28px;
 }
 .btn-large i {
   font-size: 1.6rem;
 }
 
-.btn-small:not(.btn-floating) {
-  height: 32.4px !important;
-  line-height: 32.4px !important;
-  font-size: 13px !important;
+.btn-small {
+  height: 32.4px;
+  line-height: 32.4px;
+  font-size: 13px;
 }
 .btn-small i {
   font-size: 1.2rem;
