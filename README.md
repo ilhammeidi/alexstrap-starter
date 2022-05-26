@@ -20,7 +20,7 @@ https://ilhammeidi.github.io/alexstrap-doc/
 
 [GET IT NOW on Envato](https://themeforest.net/item/maestrolux-multipurpose-html5-landing-page-collection/27767474)
 
-[SEE DEMO](https://maestrolux.indisains.com/)
+[SEE DEMO](https://maestrolux.vercel.app/)
 
 ### Installation
 
