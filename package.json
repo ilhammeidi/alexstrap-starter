@@ -38,6 +38,7 @@
 		"pace-js": "^1.0.2",
 		"pace-progressbar": "^1.0.9",
 		"rtl-sass": "^1.5.0",
+        "sass": "^1.63.6",
 		"sass-material-colors": "^0.0.5",
 		"slick-carousel": "^1.8.1",
 		"wow.js": "^1.2.2"
@@ -50,6 +51,6 @@
 		"gulp-plumber": "^1.2.1",
 		"gulp-pug": "^4.0.1",
 		"gulp-rename": "^1.4.0",
-		"gulp-sass": "^4.0.2"
+		"gulp-sass": "^5.1.0"
 	}
 }

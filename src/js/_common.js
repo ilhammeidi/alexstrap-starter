@@ -1,15 +1,17 @@
-var smUp = "(min-wdth: 600px)",
-    mdUp = "(min-width: 960px)",
-    lgUp = "(min-width: 1280px)",
-    xlUp = "(min-width: 1920px)",
-    xsDown = "(max-width: 599px)",
-    smDown = "(max-width: 959px)",
-    mdDown = "(max-width: 1279px)",
-    lgDown = "(max-width: 1919px)";
+/**
+ * @name _common
+ * @function handle scroling
+ * @function initial parallax, tooltip, carousel, etc
+ */
 
 var $header = $("#header");
 var $pageNav = $("#page_nav");
-var sticky = header.offsetTop + 100;
+var sticky = 0;
+
+// Sticky header
+if($("#header").length > 0) {
+  sticky = header.offsetTop + 80;
+}
 
 function fixedNav() {
   if (window.pageYOffset > sticky) {
@@ -19,6 +21,7 @@ function fixedNav() {
   }
 }
 
+// Bottom right navigation,
 function fixedFabNav() {
   if (window.pageYOffset > 500) {
     $pageNav.addClass("show");
@@ -27,11 +30,31 @@ function fixedFabNav() {
   }
 }
 
-// Scroll fixed
-window.onscroll = function() {
-  fixedNav();
-  fixedFabNav();
-};
+/**
+ * @name Feature Progress
+ * @function handle progress on scroll window
+ */
+
+var progressOffset = 0;
+
+var $progress = $('#statistic').offset();
+if($("#statistic").length > 0) {
+  progressOffset = $progress.top - 50;
+}
+
+function playProgress() {
+  if (window.pageYOffset > progressOffset) {
+    $('#statistic').removeClass('zero');
+  }
+}
+
+setTimeout(function() {
+  window.onscroll = function() {
+    playProgress();
+    fixedNav();
+    fixedFabNav();
+  };
+}, 500)
 
 $(document).ready(function(){
   // Preloader
