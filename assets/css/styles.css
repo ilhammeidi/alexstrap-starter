@@ -10159,6 +10159,11 @@ body {
   max-width: 98%;
 }
 
+@media (max-width: 1279px) {
+  .feature-more .img {
+    margin: 0 auto;
+  }
+}
 .feature-more .img img {
   width: 100%;
 }
@@ -10180,8 +10185,9 @@ body {
   margin-bottom: 160px;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 1279px) {
   .feature-item {
+    margin-bottom: 40px;
     text-align: center;
   }
 }

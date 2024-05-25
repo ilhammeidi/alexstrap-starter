@@ -8,6 +8,15 @@ var $header = $('#header'),
     $slideMenu = $('#slide-menu')
     isOpen = false;
 
+document.addEventListener('DOMContentLoaded', function() {
+  // initial dropdown
+  var dropdownTrigger = document.querySelectorAll('.dropdown-trigger');
+  var instancesDropdown = M.Dropdown.init(dropdownTrigger, {
+    closeOnClick: false,
+    alignment: 'left'
+  });
+});
+
 $(document).ready(function(){
   // Dark and Light mode config
   if(darkMode === 'true') {
@@ -27,12 +36,6 @@ $(document).ready(function(){
       $('#app').removeClass('theme--dark');
       $('#app').addClass('theme--light');
     }
-  });
-
-  // initial dropdown
-  $('.dropdown-trigger').dropdown({
-    closeOnClick: false,
-    alignment: "left"
   });
 
   // Initial sidenav for mobile menu

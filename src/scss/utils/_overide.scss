@@ -15,6 +15,12 @@ html {
   overflow: hidden;
   .carousel {
     height: auto;
+    .carousel-item {
+      visibility: visible;
+      position: relative;
+      height: auto;
+      width: 100%;
+    }
   }
   a {
     &:hover {

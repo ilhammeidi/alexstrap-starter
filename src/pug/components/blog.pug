@@ -26,8 +26,8 @@ include cards/blog-card.pug
     | Curabitur egestas consequat lorem, vel fermentum augue porta id.
   #blog-list.blog-wrap
     .row.justify-content-center
-      .col-md-9
+      .col-md-9.col-sm-12
         .row
           each item in blogData
-            .col-md-4.px-3
+            .col-sm-4.px-3
               +blog-card(item.title, item.desc)

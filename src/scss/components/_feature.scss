@@ -44,6 +44,9 @@
     position: relative;
     width: 400px;
     max-width: 98%;
+    @include breakpoints-down(md) {
+      margin: 0 auto;
+    }
     img {
       width: 100%
     }
@@ -63,7 +66,8 @@
 .feature-item {
   position: relative;
   margin-bottom: $spacing20;
-  @include breakpoints-down(xs) {
+  @include breakpoints-down(md) {
+    margin-bottom: $spacing5;
     text-align: center;
   }
   &.last {

@@ -2,14 +2,14 @@
 .feature-more
   .container#mode_feature
     .row
-      .col-md-6.px-6
+      .col-md-6.col-sm-12.px-6
         .feature-item
           .wow.fadeInLeft(data-wow-duration="0.6s")
-            h3.title-app.display-2 Lorem ipsum dolor
+            h3.text.text-md-right.title-app.display-2 Lorem ipsum dolor
           .wow.fadeInLeft(data-wow-delay="0.3s" data-wow-duration="0.6s")
-            p.text
+            p.text.text-md-right
               | Quos blanditiis tenetur unde suscipit, quam beatae rerum inventore consectetur, neque doloribus.
-      .col-md-6.px-6
+      .col-md-6.col-sm-12.px-6
         .feature-item
           .wow.zoomIn(data-wow-delay="0.3s" data-wow-duration="0.6s")
             .deco1
@@ -21,7 +21,14 @@
               |
               |
     .row
-      .col-md-6.px-6
+      .col-md-6.col-sm-12.px-6.col-lg-5
+        .feature-item
+          .wow.fadeInLeft(data-wow-duration='0.6s')
+            h3.title-app.display-2 Lorem ipsum dolor
+          .wow.fadeInRight(data-wow-delay="0.5s" data-wow-duration="0.6s")
+            p.text
+              | Quos blanditiis tenetur unde suscipit, quam beatae rerum inventore consectetur, neque doloribus.
+      .col-md-6.col-sm-12.px-6.col-lg-0
         .feature-item
           .wow.zoomIn(data-wow-delay="0.3s" data-wow-duration="0.6s")
             .deco1
@@ -32,13 +39,6 @@
               img(src=imgAPI.photo[0] alt="img")/
               |
               |
-      .col-md-6.px-6
-        .feature-item
-          .wow.fadeInLeft(data-wow-duration='0.6s')
-            h3.title-app.display-2 Lorem ipsum dolor
-          .wow.fadeInRight(data-wow-delay="0.5s" data-wow-duration="0.6s")
-            p.text
-              | Quos blanditiis tenetur unde suscipit, quam beatae rerum inventore consectetur, neque doloribus.
     .row
       .col-md-12.px-6
         .feature-item.last.text-center
